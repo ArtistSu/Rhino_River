@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #f97316;
+  --font-family-sans: Roboto, sans-serif;
+  --container-center: true;
+  --container-padding-default: 1rem;
+  --container-padding-sm: 2rem;
+  --container-padding-lg: 4rem;
+  --container-padding-xl: 5rem;
+  --container-padding-2xl: 6rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-family-sans);
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-primary text-white py-2 px-4 rounded shadow-sm hover:shadow-md;
+  }
+
+  custom-container {
+    @apply container mx-auto px-4;
+
+    @screen sm {
+      @apply px-8; /* sm: padding 2rem ≈ 32px (px-8) */
+    }
+
+    @screen lg {
+      @apply px-16; /* lg: padding 4rem ≈ 64px (px-16) */
+    }
+
+    @screen xl {
+      @apply px-20; /* xl: padding 5rem ≈ 80px (px-20) */
+    }
+
+    @screen 2xl {
+      @apply px-24; /* 2xl: padding 6rem ≈ 96px (px-24) */
+    }
+  }
+}
+
+
+/* container {
+  center: true;
+  padding: {
+    DEFAULT: "1rem",
+    sm: var(--container-padding-sm),
+    lg: var(--container-padding-sm),
+    xl: var(--container-padding-xl),
+    "2xl": var(--container-padding-2xl),
+  },
+} */
