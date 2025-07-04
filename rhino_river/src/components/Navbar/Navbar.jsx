@@ -31,11 +31,11 @@ const NavbarLinks = [
 const Navbar = () => {
   return (
     <>
-      <div className="custom-container flex justify-between items-center">
+      <div className="py-4 container flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center gap-1">
-          <img src={Logo} alt="" className="w-[50px]" />
-          <p className="font-bold text-xl"> RR </p>
+          <img src={Logo} alt="" className="w-[50px] rounded-b-full" />
+          {/* <p className="font-bold text-xl"> RR </p> */}
         </div>
         {/* Link Section */}
         <div className="hidden md:block">
@@ -44,7 +44,7 @@ const Navbar = () => {
               return (
                 <li key={link.id}>
                   <a
-                    className="hover:text-primary uppercase text-sm md:text-base"
+                    className="hover:text-primary uppercase text-sm xl:text-base"
                     herf={link.link}
                   >
                     {link.title}

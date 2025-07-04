@@ -24,24 +24,46 @@
     @apply bg-primary text-white py-2 px-4 rounded shadow-sm hover:shadow-md;
   }
 
-  custom-container {
-    @apply container mx-auto px-4;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-    @screen sm {
-      @apply px-8; /* sm: padding 2rem ≈ 32px (px-8) */
-    }
+}
 
-    @screen lg {
-      @apply px-16; /* lg: padding 4rem ≈ 64px (px-16) */
-    }
 
-    @screen xl {
-      @apply px-20; /* xl: padding 5rem ≈ 80px (px-20) */
-    }
+/* sm ≥ 640px */
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 
-    @screen 2xl {
-      @apply px-24; /* 2xl: padding 6rem ≈ 96px (px-24) */
-    }
+/* lg ≥ 1024px */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* xl ≥ 1280px */
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* 2xl ≥ 1536px */
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 
