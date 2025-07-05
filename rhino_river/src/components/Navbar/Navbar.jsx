@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../../assets/1.png";
+import { motion } from "framer-motion";
+import { slideBottom } from "../utility/animation";
 
 const NavbarLinks = [
   {
@@ -28,13 +30,19 @@ const NavbarLinks = [
     line: "#",
   },
 ];
+
 const Navbar = () => {
   return (
     <>
-      <div className="py-4 container flex justify-between items-center">
+      <motion.div
+        variants={slideBottom(0.2)}
+        initial="initial"
+        animate="animate"
+        className="py-4 container flex justify-between items-center"
+      >
         {/* Logo Section */}
         <div className="flex items-center gap-1">
-          <img src={Logo} alt="" className="w-[50px] rounded-b-full" />
+          <img src={Logo} alt="" className="w-[70px] rounded-b-full" />
           {/* <p className="font-bold text-xl"> RR </p> */}
         </div>
         {/* Link Section */}
@@ -58,7 +66,7 @@ const Navbar = () => {
         <div>
           <button className="primary-btn">Request For Quotes</button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
