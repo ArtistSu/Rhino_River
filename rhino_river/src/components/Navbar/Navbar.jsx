@@ -42,7 +42,7 @@ const Navbar = () => {
       >
         {/* Logo Section */}
         <div className="flex items-center gap-1">
-          <img src={Logo} alt="" className="w-[70px] rounded-b-full" />
+          <img src={Logo} alt="" className="w-[70px] rounded-full" />
           {/* <p className="font-bold text-xl"> RR </p> */}
         </div>
         {/* Link Section */}

@@ -1,4 +1,4 @@
-import HeroImg from "../../assets/1.png";
+import HeroImg from "../../assets/2.jpg";
 import { motion } from "framer-motion";
 import { slideup } from "../utility/animation";
 
@@ -16,7 +16,7 @@ const Hero = () => {
               className="text-4xl xl:text-5xl font-bold"
             >
               Bringing Tasty Together, Everywhere! Or Taste the World, Trade
-              with a <span className="text-gray-600 underline">smile</span>
+              with a <span className="text-gray-400 underline">smile</span>
             </motion.h1>
             <p>
               Explore diverse flavors, discover new favorites, and join a
@@ -50,7 +50,7 @@ const Hero = () => {
               }}
               src={HeroImg}
               alt=""
-              className="w-[80%] md:w-[550px] xl:w-[600px]"
+              className="w-[80%] md:w-[350px] xl:w-[500px] xl:h-[700px]"
             />
           </div>
         </div>
